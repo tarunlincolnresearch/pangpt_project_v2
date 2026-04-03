@@ -1,0 +1,35 @@
+# Input and generated data
+data/
+
+# Conda environment
+pangenome/
+
+# Logs
+logs/
+*.log
+training.log
+
+# Checkpoints and results
+checkpoints/
+results/
+
+# Slurm output files
+*.out
+*.err
+
+# Tokenizer (generated during training)
+pangenome_gpt_tokenizer.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Hyperparam search trial artifacts
+logs/hyperparam_search_*/
+
+# Keep folder structure
+!data/.gitkeep
+!logs/.gitkeep
+!checkpoints/.gitkeep
+!results/.gitkeep
