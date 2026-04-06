@@ -1,0 +1,25 @@
+# Exclude large checkpoint files
+checkpoints/
+*.pth
+*.pt
+
+# Exclude logs
+logs/
+*.log
+*.out
+*.err
+
+# Exclude virtual environment
+pangenome/
+venv/
+env/
+
+# Exclude cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Exclude temporary files
+*.tmp
+*.swp
+*~
