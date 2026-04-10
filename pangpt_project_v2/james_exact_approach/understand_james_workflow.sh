@@ -1,0 +1,56 @@
+#!/bin/bash
+
+echo "=========================================="
+echo "UNDERSTANDING JAMES'S EXACT WORKFLOW"
+echo "=========================================="
+echo ""
+
+echo "Based on https://github.com/mol-evol/panGPT"
+echo ""
+
+echo "STEP 1: Prepare Input Data"
+echo "-------------------------------------------"
+echo "James expects:"
+echo "  - Input file: text file with one genome per line"
+echo "  - Format: space-separated gene names"
+echo "  - Example: 'geneA geneB geneC geneD...'"
+echo ""
+
+echo "STEP 2: Training (panGPT.py)"
+echo "-------------------------------------------"
+echo "James's code will:"
+echo "  1. Load input file"
+echo "  2. Split into train/val/test (using --train_size, --val_size)"
+echo "  3. Build tokenizer from training data"
+echo "  4. Pad/truncate sequences to --max_seq_length"
+echo "  5. Train transformer model"
+echo ""
+
+echo "Key arguments:"
+echo "  --input_file: Path to genome file"
+echo "  --max_seq_length: Maximum sequence length (James handles padding)"
+echo "  --train_size: Proportion for training (e.g., 0.8)"
+echo "  --val_size: Proportion for validation (e.g., 0.1)"
+echo "  --model_save_path: Where to save trained model"
+echo "  --tokenizer_file: Where to save tokenizer"
+echo ""
+
+echo "STEP 3: Inference (panPrompt.py)"
+echo "-------------------------------------------"
+echo "Use trained model to predict next genes"
+echo ""
+
+echo "=========================================="
+echo "OUR PLAN"
+echo "=========================================="
+echo ""
+
+echo "1. Prepare input file (all genomes, one per line)"
+echo "2. Let James's panGPT.py handle:"
+echo "   - Train/val/test split internally"
+echo "   - Tokenization"
+echo "   - Padding to max_seq_length"
+echo "   - Training"
+echo "3. Use panPrompt.py for inference"
+echo ""
+

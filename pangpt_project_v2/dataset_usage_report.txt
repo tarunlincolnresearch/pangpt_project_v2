@@ -1,0 +1,118 @@
+==========================================
+DATASET USAGE ANALYSIS
+==========================================
+
+1. ORIGINAL GENOME DATA
+-------------------------------------------
+Original data file: data/cleaned_gene_orders.json
+File size: 468M
+Total genomes in dataset: 9584
+
+2. GENOME-LEVEL SPLIT (80-10-10)
+-------------------------------------------
+Reading split information...
+Train genomes: 7667
+Val genomes:   958
+Test genomes:  959
+Total:         9584
+
+3. WINDOWING PROCESS (Window Size = 256)
+-------------------------------------------
+Train windows file: data/phase1/win256/train_windows.txt
+  Windows created: 147147
+  File size: 278M
+  Sample window (first line):
+     1	group_18393
+     2	chuR_1
+     3	ydeP
+     4	ydeO
+     5	safA
+     6	group_7351
+     7	fimH_1
+     8	fimG_1
+     9	fimF_1
+    10	fimD_1
+... (256 genes total per window)
+
+Validation windows file: data/phase1/win256/val_windows.txt
+  Windows created: 18388
+  File size: 35M
+
+Test windows file: data/phase1/win256/test_windows.txt
+  Windows created: 18378
+  File size: 35M
+
+Total windows across all splits: 183913
+
+4. HOW WINDOWING WORKS
+-------------------------------------------
+Example: If a genome has 1000 genes and window size = 256:
+
+  Window 1:  genes[0:256]     → positions 1-256
+  Window 2:  genes[256:512]   → positions 257-512
+  Window 3:  genes[512:768]   → positions 513-768
+  Window 4:  genes[768:1000]  → positions 769-1000 (remainder, padded)
+
+  Result: 4 windows from 1 genome
+
+Key points:
+  ✓ Each genome is split into multiple windows
+  ✓ Windows don't overlap (shift = window_size)
+  ✓ Last window may be shorter (gets padded)
+  ✓ Gene order is preserved within each window
+
+5. WINDOWS PER GENOME STATISTICS
+-------------------------------------------
+Train set:
+  7667 genomes → 147147 windows
+  Average: ~19.19 windows per genome
+
+Validation set:
+  958 genomes → 18388 windows
+  Average: ~19.19 windows per genome
+
+Test set:
+  959 genomes → 18378 windows
+  Average: ~19.16 windows per genome
+
+6. TOTAL GENES IN DATASET
+-------------------------------------------
+Counting genes in training data (this may take a moment)...
+Sample analysis (first 1000 windows):
+  Total genes: 256000
+  Average genes per window: 256
+
+Estimated total genes in training set:
+  147147 windows × 256 genes/window
+  ≈ 37,669,632 genes
+
+7. WHAT THE MODEL SEES DURING TRAINING
+-------------------------------------------
+Training configuration:
+  Batch size: 4 windows
+  Training windows: 147147
+  Batches per epoch: 36786
+  Max epochs: 150
+
+Total training iterations:
+  36786 batches/epoch × 150 epochs
+  = 5,517,900 total batches
+
+Each batch contains:
+  4 windows × 256 genes/window = 1024 genes
+
+8. COMPLETE DATASET SUMMARY
+-------------------------------------------
+┌─────────────────────┬───────────┬─────────────┬──────────────┐
+│ Split               │ Genomes   │ Windows     │ Genes (est.) │
+├─────────────────────┼───────────┼─────────────┼──────────────┤
+│ Training            │      7667 │     147,147 │   37,669,632 │
+│ Validation          │       958 │      18,388 │    4,707,328 │
+│ Test                │       959 │      18,378 │    4,704,768 │
+├─────────────────────┼───────────┼─────────────┼──────────────┤
+│ TOTAL               │      9584 │     183,913 │   47,081,728 │
+└─────────────────────┴───────────┴─────────────┴──────────────┘
+
+==========================================
+ANALYSIS COMPLETE
+==========================================
