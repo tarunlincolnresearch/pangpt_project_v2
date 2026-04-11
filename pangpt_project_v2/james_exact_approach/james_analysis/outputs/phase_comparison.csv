@@ -1,0 +1,6 @@
+Phase,Layers,Embed_Dim,Heads,Params,Dropout,Label_Smoothing,Weight_Decay,Val_Accuracy,Test_Accuracy,Test_Perplexity,Training_Time,Overfitting_Gap,Status
+Phase 1,6,512,8,~50M,0.1,0.0,0.0,65.5,0.51,2.49,~6h,64.99,Severe Overfit
+Phase 2,6,256,8,~30M,0.2,0.1,0.001,50.28,50.23,258.32,~6h,0.05,Over-regularized
+Phase 2A,6,256,8,~30M,0.15,0.05,0.0005,50.27,50.27,142.32,~6h,0.0,Balanced
+Phase 3,12,512,16,~89M,0.15,0.05,0.0005,50.29,50.29,141.3,~27h,0.0,Balanced
+James,6,512,8,,,,0.0001,66.04148427503537,65.41415910060262,2.4871039390563965,,0.63,Breakthrough!

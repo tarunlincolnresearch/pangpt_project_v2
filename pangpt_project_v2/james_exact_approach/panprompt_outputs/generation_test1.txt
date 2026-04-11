@@ -1,0 +1,64 @@
+================================================================================================
+GENERATION TEST 1: Standard Settings
+================================================================================================
+
+Settings:
+  - Number of tokens to generate: 20
+  - Temperature: 1.0
+  - Top-k: 50
+  - Top-p: 0.95
+  - Repetition penalty: 1.2
+
+================================================================================================
+INPUT PROMPT (First 100 genes):
+================================================================================================
+cbtA_3 group_24448 yeeW_1 group_49138 group_72007 group_28085 group_35427 group_66424 nanS group_17144 nanC xerC_1 group_37235 group_56292 group_21542 lpfA fimD_2 fimF_2 fimG_2 group_38802 group_86585 group_37970 group_67742 group_39964 group_38961 group_65062 group_24946 dhaL_2 dhaK_1 dhaD group_43651 thi4_2 group_31731 group_31740 glxK_2 glxR_2 hyi_2 gcl_2 dhaR_1 group_38665 mleN yjiE iadA group_62041 group_47992 kptA group_34749 yjiK fldI fldI fldC group_25427 group_28699 group_72008 group_86586 group_56991 group_45713 group_45722 group_57685 group_44674 group_65591 group_74115 group_50358 yjiA group_74119 btsT group_28583 dctM_2 group_42577 group_66433 group_33084 group_31710 group_47929 lgoD_2 mdoB group_72013 dnaC dnaT group_68668 yjjP group_43663 bglJ fhuF group_52053 rsmC holD rimI yjjG prfC osmY_2 group_86587 group_45743 yjjV yjjW yjjI deoC deoA group_37241 deoD group_46285 
+
+================================================================================================
+PREDICTED CONTINUATION (Next 20 genes):
+================================================================================================
+fliN fliM group_67822 ydgA_2 ompF fliN fliN dgcE group_11759 group_55165 dusC group_72169 rutC dcd udk dcd group_27786 group_21950   
+
+================================================================================================
+ACTUAL CONTINUATION (Next 20 genes from original genome):
+================================================================================================
+lplA group_22341 group_52349 radA higB-2_1 ettA group_36509 trpR yjjX group_66454 rob_1 group_63488 creB creC creD arcA_1 trmH_1 thrA thrB thrC 
+
+================================================================================================
+COMPARISON:
+================================================================================================
+
+Predicted genes: 18 genes
+Actual genes:    20 genes
+
+Predicted: fliN fliM group_67822 ydgA_2 ompF fliN fliN dgcE group_11759 group_55165 dusC group_72169 rutC dcd udk dcd group_27786 group_21950   
+
+Actual:    lplA group_22341 group_52349 radA higB-2_1 ettA group_36509 trpR yjjX group_66454 rob_1 group_63488 creB creC creD arcA_1 trmH_1 thrA thrB thrC 
+
+================================================================================================
+ANALYSIS:
+================================================================================================
+
+Position 1: ✗ DIFF - Predicted: fliN | Actual: lplA
+Position 2: ✗ DIFF - Predicted: fliM | Actual: group_22341
+Position 3: ✗ DIFF - Predicted: group_67822 | Actual: group_52349
+Position 4: ✗ DIFF - Predicted: ydgA_2 | Actual: radA
+Position 5: ✗ DIFF - Predicted: ompF | Actual: higB-2_1
+Position 6: ✗ DIFF - Predicted: fliN | Actual: ettA
+Position 7: ✗ DIFF - Predicted: fliN | Actual: group_36509
+Position 8: ✗ DIFF - Predicted: dgcE | Actual: trpR
+Position 9: ✗ DIFF - Predicted: group_11759 | Actual: yjjX
+Position 10: ✗ DIFF - Predicted: group_55165 | Actual: group_66454
+Position 11: ✗ DIFF - Predicted: dusC | Actual: rob_1
+Position 12: ✗ DIFF - Predicted: group_72169 | Actual: group_63488
+Position 13: ✗ DIFF - Predicted: rutC | Actual: creB
+Position 14: ✗ DIFF - Predicted: dcd | Actual: creC
+Position 15: ✗ DIFF - Predicted: udk | Actual: creD
+Position 16: ✗ DIFF - Predicted: dcd | Actual: arcA_1
+Position 17: ✗ DIFF - Predicted: group_27786 | Actual: trmH_1
+Position 18: ✗ DIFF - Predicted: group_21950 | Actual: thrA
+Position 19: ✗ DIFF - Predicted:  | Actual: thrB
+Position 20: ✗ DIFF - Predicted:  | Actual: thrC
+
+Exact matches: 0 / 20 (%)
+================================================================================================

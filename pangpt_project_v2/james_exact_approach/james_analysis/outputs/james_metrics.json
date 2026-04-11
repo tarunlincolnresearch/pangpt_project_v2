@@ -1,0 +1,28 @@
+{
+  "training": {
+    "final_loss": 0.8149914939135792,
+    "final_accuracy": null,
+    "epochs_completed": 49,
+    "training_time": null
+  },
+  "validation": {
+    "final_loss": 0.8794956232162507,
+    "final_accuracy": 66.04148427503537,
+    "best_accuracy": 66.4849382776516,
+    "best_epoch": 49
+  },
+  "test": {
+    "accuracy": 65.41415910060262,
+    "loss": 0.9111189126719512,
+    "perplexity": 2.4871039390563965
+  },
+  "model_config": {
+    "num_layers": 6,
+    "embed_dim": 512,
+    "num_heads": 8,
+    "total_params": null,
+    "dropout": null,
+    "label_smoothing": null,
+    "weight_decay": 0.0001
+  }
+}

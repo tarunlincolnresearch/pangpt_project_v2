@@ -1,0 +1,393 @@
+====================================================================================================
+DETAILED PREDICTIONS FOR 5 RANDOM TEST GENOMES
+====================================================================================================
+
+
+====================================================================================================
+GENOME 1/5
+====================================================================================================
+Total genes in genome: 4157
+Input sequence length: 4156 genes
+Actual next gene: group_45842
+
+Input sequence (first 25 and last 25 genes):
+  mutT secA secM group_65070 ftsZ ftsA_2 ftsQ ddlB group_40854 murG ftsW murD mraY murF murE ftsI ftsL rsmH mraZ cra ilvH ilvI leuO leuA leuB... [4106 genes omitted]... group_26388 group_21943 group_56504 zinT group_52621 group_33578 group_52907 group_87658 group_95925 group_69252 group_37800 group_51161 group_74999 group_13359 group_11442 ail group_1550 group_18371 group_18375 mpaA group_40915 tpx group_48148 group_19537 group_45842
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+PREDICTION RESULTS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+✗ NOT FOUND in top 100 predictions
+
+Top 50 Predictions (out of 70,000 possible genes):
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Rank   Gene Name                           Probability     Cumulative      Status    
+────────────────────────────────────────────────────────────────────────────────────────────────────
+1      stpA                                2.5721%          2.57%        
+2      papC_1                              2.2687%          4.84%        
+3      group_30197                         0.7264%          5.57%        
+4      ung                                 0.6907%          6.26%        
+5      group_109                           0.6031%          6.86%        
+6      nusB                                0.5368%          7.40%        
+7      ygaV                                0.4783%          7.88%        
+8      group_27775                         0.4213%          8.30%        
+9      group_20866                         0.4130%          8.71%        
+10     group_72087                         0.3984%          9.11%        
+11     group_70160                         0.3820%          9.49%        
+12     pspD                                0.3598%          9.85%        
+13     group_60510                         0.3478%         10.20%        
+14     group_22172                         0.3138%         10.51%        
+15     trmL                                0.3111%         10.82%        
+16     group_64721                         0.3020%         11.13%        
+17     fliA                                0.2923%         11.42%        
+18     ybaT                                0.2899%         11.71%        
+19     group_57217                         0.2841%         11.99%        
+20     msrQ                                0.2691%         12.26%        
+21     recX                                0.2653%         12.53%        
+22     ycjM                                0.2547%         12.78%        
+23     rhaS_2                              0.2441%         13.02%        
+24     group_79064                         0.2434%         13.27%        
+25     mtr                                 0.2396%         13.51%        
+26     msrC                                0.2362%         13.74%        
+27     group_48121                         0.2357%         13.98%        
+28     group_21122                         0.2323%         14.21%        
+29     modA                                0.2198%         14.43%        
+30     pgl                                 0.2065%         14.64%        
+31     gpsA                                0.2019%         14.84%        
+32     group_75602                         0.2018%         15.04%        
+33     group_39332                         0.2002%         15.24%        
+34     tatE                                0.1963%         15.44%        
+35     insK_3                              0.1924%         15.63%        
+36     group_24791                         0.1860%         15.82%        
+37     eamB                                0.1857%         16.00%        
+38     mtfA                                0.1838%         16.19%        
+39     sbcB                                0.1828%         16.37%        
+40     yabJ                                0.1783%         16.55%        
+41     pgpA                                0.1759%         16.72%        
+42     crcB                                0.1734%         16.90%        
+43     mltB                                0.1724%         17.07%        
+44     caiE                                0.1674%         17.24%        
+45     kbp                                 0.1640%         17.40%        
+46     group_63520                         0.1637%         17.56%        
+47     dxr                                 0.1631%         17.73%        
+48     intA_2                              0.1625%         17.89%        
+49     group_52396                         0.1595%         18.05%        
+50     btuD_1                              0.1594%         18.21%        
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Probability Distribution Summary:
+  - Top 10 genes account for:  9.11% of total probability
+  - Top 50 genes account for:  18.21% of total probability
+  - Top 100 genes account for: 23.78% of total probability
+  - Remaining 69,900 genes:    76.22% of total probability
+
+
+====================================================================================================
+GENOME 2/5
+====================================================================================================
+Total genes in genome: 5014
+Input sequence length: 5013 genes
+Actual next gene: group_52061
+
+Input sequence (first 25 and last 25 genes):
+  group_13351 group_4057 group_95681 group_87463 dinI_2 group_26184 group_49164 group_86587 group_45743 group_33308 yjjW yjjI deoC group_33021 deoB_1 deoD yjjJ lplA ytjB serB radA nadR higB-2_1 group_59579 ettA... [4963 genes omitted]... group_87943 group_87942 group_83742 group_96516 group_43554 group_15991 caiT_2 caiT_2 group_29036 group_43404 group_76923 group_87328 group_168 group_5391 group_11463 ail group_1550 group_23 group_23 group_57904 group_66656 group_56207 group_45269 group_26983 group_5937
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+PREDICTION RESULTS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+✗ NOT FOUND in top 100 predictions
+
+Top 50 Predictions (out of 70,000 possible genes):
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Rank   Gene Name                           Probability     Cumulative      Status    
+────────────────────────────────────────────────────────────────────────────────────────────────────
+1      stpA                                2.7118%          2.71%        
+2      papC_1                              2.2783%          4.99%        
+3      ung                                 0.7643%          5.75%        
+4      group_30197                         0.7457%          6.50%        
+5      nusB                                0.5511%          7.05%        
+6      group_109                           0.5305%          7.58%        
+7      ygaV                                0.5230%          8.10%        
+8      group_27775                         0.4378%          8.54%        
+9      pspD                                0.3964%          8.94%        
+10     group_60510                         0.3698%          9.31%        
+11     group_72087                         0.3677%          9.68%        
+12     group_20866                         0.3489%         10.03%        
+13     fliA                                0.3405%         10.37%        
+14     group_70160                         0.3380%         10.70%        
+15     group_22172                         0.3161%         11.02%        
+16     group_64721                         0.3055%         11.33%        
+17     ycjM                                0.3036%         11.63%        
+18     group_57217                         0.3003%         11.93%        
+19     trmL                                0.2917%         12.22%        
+20     ybaT                                0.2685%         12.49%        
+21     mtr                                 0.2562%         12.75%        
+22     rhaS_2                              0.2448%         12.99%        
+23     msrQ                                0.2368%         13.23%        
+24     group_79064                         0.2336%         13.46%        
+25     msrC                                0.2256%         13.69%        
+26     recX                                0.2214%         13.91%        
+27     modA                                0.2175%         14.13%        
+28     pgl                                 0.2165%         14.34%        
+29     group_21122                         0.2140%         14.56%        
+30     group_48121                         0.2106%         14.77%        
+31     eamB                                0.2097%         14.98%        
+32     gpsA                                0.2031%         15.18%        
+33     group_75602                         0.2030%         15.38%        
+34     yabJ                                0.1970%         15.58%        
+35     insK_3                              0.1965%         15.78%        
+36     sbcB                                0.1843%         15.96%        
+37     group_39332                         0.1790%         16.14%        
+38     kbp                                 0.1734%         16.31%        
+39     mtfA                                0.1708%         16.48%        
+40     dxr                                 0.1687%         16.65%        
+41     group_24791                         0.1657%         16.82%        
+42     fdrA_2                              0.1652%         16.98%        
+43     btuD_1                              0.1610%         17.14%        
+44     group_63520                         0.1598%         17.30%        
+45     group_19004                         0.1574%         17.46%        
+46     group_52396                         0.1567%         17.62%        
+47     pgpA                                0.1562%         17.77%        
+48     intA_2                              0.1542%         17.93%        
+49     tatE                                0.1529%         18.08%        
+50     group_47051                         0.1477%         18.23%        
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Probability Distribution Summary:
+  - Top 10 genes account for:  9.31% of total probability
+  - Top 50 genes account for:  18.23% of total probability
+  - Top 100 genes account for: 23.79% of total probability
+  - Remaining 69,900 genes:    76.21% of total probability
+
+
+====================================================================================================
+GENOME 3/5
+====================================================================================================
+Total genes in genome: 4707
+Input sequence length: 4706 genes
+Actual next gene: group_16320
+
+Input sequence (first 25 and last 25 genes):
+  group_36000 group_28840 group_28843 group_44571 fliZ fliA fliC2 group_45893 group_55113 group_55121 amyA group_57855 group_25935 yedF group_12778 group_51627 tcdA group_68449 group_45974 ygdR_1 gcvA group_60857 group_48250 ydjF_2 fucU... [4656 genes omitted]... eutM eutN proA_1 group_37379 group_17612 group_27989 group_11378 group_102108 group_102107 group_102106 group_102105 group_102104 group_102103 group_102102 group_90370 group_90369 group_102101 group_102100 group_102099 group_102098 group_102097 group_102096 group_102095 group_12392 group_53565
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+PREDICTION RESULTS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+✗ NOT FOUND in top 100 predictions
+
+Top 50 Predictions (out of 70,000 possible genes):
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Rank   Gene Name                           Probability     Cumulative      Status    
+────────────────────────────────────────────────────────────────────────────────────────────────────
+1      stpA                                2.6302%          2.63%        
+2      papC_1                              2.1213%          4.75%        
+3      ung                                 0.7959%          5.55%        
+4      group_30197                         0.6959%          6.24%        
+5      nusB                                0.5554%          6.80%        
+6      ygaV                                0.5308%          7.33%        
+7      group_109                           0.5127%          7.84%        
+8      group_27775                         0.4425%          8.28%        
+9      group_60510                         0.3922%          8.68%        
+10     group_72087                         0.3914%          9.07%        
+11     pspD                                0.3871%          9.46%        
+12     fliA                                0.3441%          9.80%        
+13     group_70160                         0.3412%         10.14%        
+14     group_20866                         0.3392%         10.48%        
+15     group_22172                         0.3293%         10.81%        
+16     group_64721                         0.2937%         11.10%        
+17     ycjM                                0.2924%         11.40%        
+18     ybaT                                0.2868%         11.68%        
+19     mtr                                 0.2852%         11.97%        
+20     trmL                                0.2846%         12.25%        
+21     group_57217                         0.2668%         12.52%        
+22     msrQ                                0.2488%         12.77%        
+23     group_79064                         0.2464%         13.01%        
+24     pgl                                 0.2304%         13.24%        
+25     msrC                                0.2278%         13.47%        
+26     recX                                0.2266%         13.70%        
+27     rhaS_2                              0.2229%         13.92%        
+28     sbcB                                0.2193%         14.14%        
+29     group_21122                         0.2122%         14.35%        
+30     gpsA                                0.2112%         14.56%        
+31     group_48121                         0.2099%         14.77%        
+32     eamB                                0.2081%         14.98%        
+33     modA                                0.2049%         15.19%        
+34     insK_3                              0.2020%         15.39%        
+35     yabJ                                0.1955%         15.58%        
+36     group_75602                         0.1938%         15.78%        
+37     kbp                                 0.1815%         15.96%        
+38     dxr                                 0.1799%         16.14%        
+39     btuD_1                              0.1715%         16.31%        
+40     mtfA                                0.1673%         16.48%        
+41     group_39332                         0.1611%         16.64%        
+42     pgpA                                0.1604%         16.80%        
+43     group_24791                         0.1600%         16.96%        
+44     group_47051                         0.1576%         17.12%        
+45     mltB                                0.1571%         17.27%        
+46     fdrA_2                              0.1566%         17.43%        
+47     ettA                                0.1564%         17.59%        
+48     group_52396                         0.1554%         17.74%        
+49     group_19004                         0.1536%         17.90%        
+50     intA_2                              0.1532%         18.05%        
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Probability Distribution Summary:
+  - Top 10 genes account for:  9.07% of total probability
+  - Top 50 genes account for:  18.05% of total probability
+  - Top 100 genes account for: 23.65% of total probability
+  - Remaining 69,900 genes:    76.35% of total probability
+
+
+====================================================================================================
+GENOME 4/5
+====================================================================================================
+Total genes in genome: 4737
+Input sequence length: 4736 genes
+Actual next gene: ant1_3
+
+Input sequence (first 25 and last 25 genes):
+  rsxD rsxG rsxE nth dtpA gstA pdxY tyrS pdxH mliC anmK slyB slyA aaeA_2 aaeA_1 aaeB_1 sodC ydhF group_52599 nemR nemA gloA rnt grxD mepH... [4686 genes omitted]... group_112150 group_89415 group_84714 group_50027 group_60032 group_69926 cia_2 group_68895 group_14917 group_89085 group_108 group_59367 group_22208 group_10381 group_53083 group_399 group_43438 group_40739 group_34009 group_29577 group_20954 group_119013 gpt_2 yokD group_48961
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+PREDICTION RESULTS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+✗ NOT FOUND in top 100 predictions
+
+Top 50 Predictions (out of 70,000 possible genes):
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Rank   Gene Name                           Probability     Cumulative      Status    
+────────────────────────────────────────────────────────────────────────────────────────────────────
+1      stpA                                2.1693%          2.17%        
+2      papC_1                              1.2967%          3.47%        
+3      nusB                                0.8774%          4.34%        
+4      ung                                 0.7371%          5.08%        
+5      group_30197                         0.6418%          5.72%        
+6      group_72087                         0.5148%          6.24%        
+7      group_20866                         0.5079%          6.74%        
+8      group_60510                         0.4784%          7.22%        
+9      ygaV                                0.4170%          7.64%        
+10     group_109                           0.4127%          8.05%        
+11     group_79064                         0.4065%          8.46%        
+12     msrQ                                0.3895%          8.85%        
+13     pspD                                0.3577%          9.21%        
+14     group_24791                         0.3441%          9.55%        
+15     pgpA                                0.2952%          9.85%        
+16     mtr                                 0.2786%         10.12%        
+17     pgl                                 0.2634%         10.39%        
+18     menC                                0.2546%         10.64%        
+19     group_64721                         0.2539%         10.90%        
+20     group_22172                         0.2478%         11.14%        
+21     group_27775                         0.2455%         11.39%        
+22     fdrA_2                              0.2390%         11.63%        
+23     yabJ                                0.2347%         11.86%        
+24     ycjM                                0.2346%         12.10%        
+25     ybaT                                0.2336%         12.33%        
+26     group_19004                         0.2319%         12.56%        
+27     trmL                                0.2266%         12.79%        
+28     group_52396                         0.2215%         13.01%        
+29     kbp                                 0.2201%         13.23%        
+30     fliA                                0.2196%         13.45%        
+31     group_48121                         0.2144%         13.67%        
+32     group_63520                         0.2128%         13.88%        
+33     group_66734                         0.2092%         14.09%        
+34     rbfA                                0.2071%         14.29%        
+35     rhaS_2                              0.1993%         14.49%        
+36     group_70160                         0.1981%         14.69%        
+37     caiE                                0.1902%         14.88%        
+38     modA                                0.1803%         15.06%        
+39     group_97207                         0.1761%         15.24%        
+40     group_3879                          0.1710%         15.41%        
+41     gpsA                                0.1683%         15.58%        
+42     group_49257                         0.1681%         15.75%        
+43     mtfA                                0.1641%         15.91%        
+44     tatE                                0.1636%         16.07%        
+45     lpxL                                0.1630%         16.24%        
+46     group_32609                         0.1608%         16.40%        
+47     dxr                                 0.1586%         16.56%        
+48     group_36005                         0.1544%         16.71%        
+49     insK_3                              0.1542%         16.86%        
+50     fadJ                                0.1523%         17.02%        
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Probability Distribution Summary:
+  - Top 10 genes account for:  8.05% of total probability
+  - Top 50 genes account for:  17.02% of total probability
+  - Top 100 genes account for: 22.75% of total probability
+  - Remaining 69,900 genes:    77.25% of total probability
+
+
+====================================================================================================
+GENOME 5/5
+====================================================================================================
+Total genes in genome: 4831
+Input sequence length: 4830 genes
+Actual next gene: group_1991
+
+Input sequence (first 25 and last 25 genes):
+  group_3681 group_10498 group_26880 fepG group_47825 group_29221 group_55963 entC entE entB entA entH cstA group_86593 hcxA ybdL ybdM_1 group_13263 ybdO dsbG ahpC ahpF uspG group_72301 rnk... [4780 genes omitted]... group_3455 group_3455 group_29980 group_41079 group_484 group_66003 group_50027 group_8973 group_1301 group_1964 group_10144 group_22161 group_59958 group_34780 group_4548 group_2998 gadB group_16012 group_10976 group_47209 group_5329 group_3763 group_10279 group_3625 group_3763
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+PREDICTION RESULTS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+✗ NOT FOUND in top 100 predictions
+
+Top 50 Predictions (out of 70,000 possible genes):
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Rank   Gene Name                           Probability     Cumulative      Status    
+────────────────────────────────────────────────────────────────────────────────────────────────────
+1      stpA                                2.3097%          2.31%        
+2      papC_1                              2.2513%          4.56%        
+3      group_30197                         0.7355%          5.30%        
+4      ung                                 0.7213%          6.02%        
+5      nusB                                0.5431%          6.56%        
+6      group_109                           0.5165%          7.08%        
+7      ygaV                                0.4546%          7.53%        
+8      group_70160                         0.4154%          7.95%        
+9      group_27775                         0.3937%          8.34%        
+10     group_60510                         0.3880%          8.73%        
+11     fliA                                0.3705%          9.10%        
+12     pspD                                0.3563%          9.46%        
+13     group_20866                         0.3527%          9.81%        
+14     group_72087                         0.3347%         10.14%        
+15     group_22172                         0.2980%         10.44%        
+16     trmL                                0.2918%         10.73%        
+17     mtr                                 0.2844%         11.02%        
+18     group_57217                         0.2752%         11.29%        
+19     ybaT                                0.2749%         11.57%        
+20     rhaS_2                              0.2741%         11.84%        
+21     group_64721                         0.2697%         12.11%        
+22     msrQ                                0.2654%         12.38%        
+23     ycjM                                0.2649%         12.64%        
+24     msrC                                0.2604%         12.90%        
+25     recX                                0.2478%         13.15%        
+26     group_79064                         0.2403%         13.39%        
+27     sbcB                                0.2360%         13.63%        
+28     gpsA                                0.2264%         13.85%        
+29     group_21122                         0.2217%         14.07%        
+30     group_75602                         0.2163%         14.29%        
+31     group_48121                         0.2146%         14.51%        
+32     pgl                                 0.2127%         14.72%        
+33     modA                                0.2073%         14.93%        
+34     insK_3                              0.1929%         15.12%        
+35     yabJ                                0.1909%         15.31%        
+36     eamB                                0.1833%         15.49%        
+37     mltB                                0.1719%         15.66%        
+38     dxr                                 0.1708%         15.83%        
+39     group_39332                         0.1697%         16.00%        
+40     group_63520                         0.1660%         16.17%        
+41     pgpA                                0.1660%         16.34%        
+42     kbp                                 0.1636%         16.50%        
+43     group_19004                         0.1621%         16.66%        
+44     group_24791                         0.1571%         16.82%        
+45     group_47051                         0.1564%         16.98%        
+46     group_52396                         0.1561%         17.13%        
+47     mtfA                                0.1551%         17.29%        
+48     nanC                                0.1535%         17.44%        
+49     fdrA_2                              0.1526%         17.59%        
+50     crcB                                0.1511%         17.74%        
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Probability Distribution Summary:
+  - Top 10 genes account for:  8.73% of total probability
+  - Top 50 genes account for:  17.74% of total probability
+  - Top 100 genes account for: 23.46% of total probability
+  - Remaining 69,900 genes:    76.54% of total probability

@@ -1,0 +1,63 @@
+
+====================================================================================================
+JAMES MODEL ANALYSIS REPORT
+Generated: 2026-04-10 20:57:38
+====================================================================================================
+
+CONFIGURATION
+----------------------------------------------------------------------------------------------------
+Architecture:
+  • Layers: 6
+  • Embedding Dimension: 512
+  • Attention Heads: 8
+  • Total Parameters: None
+
+Regularization:
+  • Dropout: None
+  • Label Smoothing: None
+  • Weight Decay: 0.0001
+
+Training:
+  • Epochs: 49
+  • Training Time: None
+  • Final Training Loss: 0.8149914939135792
+  • Final Training Accuracy: None%
+
+RESULTS
+----------------------------------------------------------------------------------------------------
+Validation Performance:
+  • Final Validation Accuracy: 66.04148427503537%
+  • Best Validation Accuracy: 66.4849382776516%
+  • Best Epoch: 49
+  • Final Validation Loss: 0.8794956232162507
+
+Test Performance:
+  • Test Accuracy: 65.41415910060262%
+  • Test Loss: 0.9111189126719512
+  • Test Perplexity: 2.4871039390563965
+
+ANALYSIS
+----------------------------------------------------------------------------------------------------
+Overfitting Analysis:
+  • Validation-Test Gap: 0.63%
+  ✅ NO OVERFITTING: Good generalization
+
+Performance Assessment:
+  ✅ BREAKTHROUGH: Test accuracy = 65.41%
+     EXCEEDED the 50% plateau by 15.12%
+
+Perplexity Analysis:
+  ⚠️  SUSPICIOUSLY LOW: Perplexity = 2.49
+
+
+COMPARISON TO PREVIOUS PHASES
+----------------------------------------------------------------------------------------------------
+Phase 1:  Val=65.5%  Test=0.51%   Perp=2.49    [Severe Overfitting]
+Phase 2:  Val=50.28% Test=50.23%  Perp=258.32  [Over-regularized]
+Phase 2A: Val=50.27% Test=50.27%  Perp=142.32  [Balanced]
+Phase 3:  Val=50.29% Test=50.29%  Perp=141.30  [Balanced - 3x larger]
+James:    Val=66.04% Test=65.41%  Perp=2.49
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

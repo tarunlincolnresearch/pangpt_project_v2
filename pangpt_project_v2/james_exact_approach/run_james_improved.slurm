@@ -12,6 +12,7 @@
 
 # ============================================================
 # James's Original Approach - Improved Version
+# Optimized for RTX A6000 GPU (47GB memory)
 # Usage: sbatch run_james_improved.slurm
 # ============================================================
 
@@ -32,7 +33,10 @@ module purge
 module load gcc
 module load nvidia/cuda
 
+echo ""
+echo "GPU Information:"
 nvidia-smi
+echo ""
 
 cd "$PROJECT_DIR"
 
@@ -51,31 +55,44 @@ memory_monitor() {
 memory_monitor &
 MONITOR_PID=$!
 echo "Memory monitor started (PID=$MONITOR_PID)"
+echo ""
 
 # ── Verify Python and PyTorch ─────────────────────────────────────────────────
-echo ""
 echo "Python version:"
 $PYTHON --version
 echo ""
 echo "PyTorch info:"
-$PYTHON -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}')" 2>/dev/null || echo "PyTorch check skipped"
+$PYTHON -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}'); print(f'CUDA version: {torch.version.cuda}'); print(f'GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"N/A\"}')" 2>/dev/null || echo "PyTorch check skipped"
 echo "======================================"
+echo ""
 
 # ── Training ──────────────────────────────────────────────────────────────────
-echo "Starting training..."
+echo "Starting training with optimized parameters..."
+echo "Batch size reduced to 8 to fit in GPU memory"
+echo ""
+
 $PYTHON -u panGPT.py \
     --input_file data/all_genomes.txt \
     --model_type transformer \
     --embed_dim 512 \
     --num_heads 8 \
     --num_layers 6 \
-    --max_seq_length 5089 \
-    --batch_size 32 \
+    --max_seq_length 1024 \
+    --batch_size 8 \
     --epochs 50 \
     --learning_rate 0.0001 \
+    --lr_scheduler_factor 0.5 \
+    --lr_patience 10 \
+    --weight_decay 0.0001 \
+    --early_stop_patience 20 \
+    --min_delta 0.01 \
     --train_size 0.8 \
     --val_size 0.1 \
     --max_vocab_size 70000 \
+    --model_dropout_rate 0.2 \
+    --pe_max_len 5000 \
+    --pe_dropout_rate 0.1 \
+    --seed 42 \
     --model_save_path checkpoints/james_model.pth \
     --tokenizer_file tokenizer.json \
     --log_dir logs
@@ -89,12 +106,21 @@ wait $MONITOR_PID 2>/dev/null
 # ── Final snapshot ────────────────────────────────────────────────────────────
 echo ""
 echo "======================================"
-echo "FINAL MEMORY"
+echo "FINAL MEMORY USAGE"
+echo "======================================"
 echo "  RAM : $(free -g | awk '/Mem:/{print $3"GB / "$2"GB"}')"
 echo "  GPU : $(nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader,nounits | awk -F', ' '{print $1" MB / "$2" MB"}')"
 echo "======================================"
-echo "Finished  : $(date)"
-echo "Exit code : $TRAIN_EXIT"
+echo "Training completed: $(date)"
+echo "Exit code: $TRAIN_EXIT"
 echo "======================================"
+
+if [ $TRAIN_EXIT -eq 0 ]; then
+    echo "✅ Training completed successfully!"
+    echo "Model saved to: checkpoints/james_model.pth"
+else
+    echo "❌ Training failed with exit code: $TRAIN_EXIT"
+    echo "Check error log: logs/james_full_${SLURM_JOB_ID}.err"
+fi
 
 exit $TRAIN_EXIT
